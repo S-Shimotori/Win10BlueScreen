@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData/
+Win10BlueScreen.saver/
 
 ## Various settings
 *.pbxuser

@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5386CE51E9B77B6009E08D6 /* Win10BlueScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */; };
-		B5386CE71E9B77B6009E08D6 /* Win10BlueScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */; };
+		B5386CF01E9B7829009E08D6 /* Win10BlueScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386CEF1E9B7829009E08D6 /* Win10BlueScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5386CE11E9B77B6009E08D6 /* Win10BlueScreen.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Win10BlueScreen.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Win10BlueScreenView.h; sourceTree = "<group>"; };
-		B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Win10BlueScreenView.m; sourceTree = "<group>"; };
 		B5386CE81E9B77B6009E08D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5386CEE1E9B7829009E08D6 /* Win10BlueScreen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Win10BlueScreen-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5386CEF1E9B7829009E08D6 /* Win10BlueScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Win10BlueScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +47,9 @@
 		B5386CE31E9B77B6009E08D6 /* Win10BlueScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */,
-				B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */,
 				B5386CE81E9B77B6009E08D6 /* Info.plist */,
+				B5386CEF1E9B7829009E08D6 /* Win10BlueScreen.swift */,
+				B5386CEE1E9B7829009E08D6 /* Win10BlueScreen-Bridging-Header.h */,
 			);
 			path = Win10BlueScreen;
 			sourceTree = "<group>";
@@ -62,7 +61,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5386CE51E9B77B6009E08D6 /* Win10BlueScreenView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +75,7 @@
 				B5386CDD1E9B77B6009E08D6 /* Frameworks */,
 				B5386CDE1E9B77B6009E08D6 /* Headers */,
 				B5386CDF1E9B77B6009E08D6 /* Resources */,
+				B5386CF11E9B7A45009E08D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -99,6 +98,7 @@
 					B5386CE01E9B77B6009E08D6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5DHF92S377;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,12 +130,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5386CF11E9B7A45009E08D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open -W \"${CODESIGNING_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5386CDC1E9B77B6009E08D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5386CE71E9B77B6009E08D6 /* Win10BlueScreenView.m in Sources */,
+				B5386CF01E9B7829009E08D6 /* Win10BlueScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,12 +248,18 @@
 		B5386CEC1E9B77B6009E08D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5DHF92S377;
 				INFOPLIST_FILE = Win10BlueScreen/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.terminal-end.Win10BlueScreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Win10BlueScreen/Win10BlueScreen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -245,12 +267,17 @@
 		B5386CED1E9B77B6009E08D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5DHF92S377;
 				INFOPLIST_FILE = Win10BlueScreen/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.terminal-end.Win10BlueScreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Win10BlueScreen/Win10BlueScreen-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
