@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5386CE51E9B77B6009E08D6 /* Win10BlueScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */; };
+		B5386CE71E9B77B6009E08D6 /* Win10BlueScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5386CE11E9B77B6009E08D6 /* Win10BlueScreen.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Win10BlueScreen.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Win10BlueScreenView.h; sourceTree = "<group>"; };
+		B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Win10BlueScreenView.m; sourceTree = "<group>"; };
+		B5386CE81E9B77B6009E08D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5386CDD1E9B77B6009E08D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5386CD71E9B77B6009E08D6 = {
+			isa = PBXGroup;
+			children = (
+				B5386CE31E9B77B6009E08D6 /* Win10BlueScreen */,
+				B5386CE21E9B77B6009E08D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5386CE21E9B77B6009E08D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5386CE11E9B77B6009E08D6 /* Win10BlueScreen.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5386CE31E9B77B6009E08D6 /* Win10BlueScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B5386CE41E9B77B6009E08D6 /* Win10BlueScreenView.h */,
+				B5386CE61E9B77B6009E08D6 /* Win10BlueScreenView.m */,
+				B5386CE81E9B77B6009E08D6 /* Info.plist */,
+			);
+			path = Win10BlueScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5386CDE1E9B77B6009E08D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5386CE51E9B77B6009E08D6 /* Win10BlueScreenView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B5386CE01E9B77B6009E08D6 /* Win10BlueScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5386CEB1E9B77B6009E08D6 /* Build configuration list for PBXNativeTarget "Win10BlueScreen" */;
+			buildPhases = (
+				B5386CDC1E9B77B6009E08D6 /* Sources */,
+				B5386CDD1E9B77B6009E08D6 /* Frameworks */,
+				B5386CDE1E9B77B6009E08D6 /* Headers */,
+				B5386CDF1E9B77B6009E08D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Win10BlueScreen;
+			productName = Win10BlueScreen;
+			productReference = B5386CE11E9B77B6009E08D6 /* Win10BlueScreen.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5386CD81E9B77B6009E08D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shigure Shimotori";
+				TargetAttributes = {
+					B5386CE01E9B77B6009E08D6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5DHF92S377;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5386CDB1E9B77B6009E08D6 /* Build configuration list for PBXProject "Win10BlueScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5386CD71E9B77B6009E08D6;
+			productRefGroup = B5386CE21E9B77B6009E08D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5386CE01E9B77B6009E08D6 /* Win10BlueScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5386CDF1E9B77B6009E08D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5386CDC1E9B77B6009E08D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5386CE71E9B77B6009E08D6 /* Win10BlueScreenView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B5386CE91E9B77B6009E08D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B5386CEA1E9B77B6009E08D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B5386CEC1E9B77B6009E08D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5DHF92S377;
+				INFOPLIST_FILE = Win10BlueScreen/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.terminal-end.Win10BlueScreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		B5386CED1E9B77B6009E08D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5DHF92S377;
+				INFOPLIST_FILE = Win10BlueScreen/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.terminal-end.Win10BlueScreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5386CDB1E9B77B6009E08D6 /* Build configuration list for PBXProject "Win10BlueScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5386CE91E9B77B6009E08D6 /* Debug */,
+				B5386CEA1E9B77B6009E08D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5386CEB1E9B77B6009E08D6 /* Build configuration list for PBXNativeTarget "Win10BlueScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5386CEC1E9B77B6009E08D6 /* Debug */,
+				B5386CED1E9B77B6009E08D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5386CD81E9B77B6009E08D6 /* Project object */;
+}
